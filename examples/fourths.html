@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Basic Grid Function</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="../src/hagrid.css">
+
+        <style>
+
+          .wrapper {
+            width: 80%;
+            margin: 0 auto; 
+          }
+          .content {
+
+            padding: 8px;
+            outline: 1px solid #000;
+          }
+
+          .collection {
+            padding: 8px;
+ 
+          }
+
+          .example-block {
+            height: 80px;
+            padding: 8px;
+            background: #DDD;
+          }
+
+        </style>
+    </head>
+    <body>
+    <div class="wrapper">
+      <div class="header">
+        <h1>Hagrid</h1>
+        <h2>Basic layouts (in fourths)</h2>
+      </div>
+
+      <div class="grid content" data-hagrid="grid-container">
+
+        <!-- Full size --> 
+        <div class="collection" data-hagrid="grid-row">
+          <div class="example-block" data-hagrid="span-100">
+            
+          </div>
+        </div>
+
+     
+        <div class="collection" data-hagrid="grid-row">
+
+          <div data-hagrid="span-25">
+            <div class="example-block">
+            
+            </div>
+          </div>
+          <div data-hagrid="span-25">
+            <div class="example-block">
+            
+            </div>
+          </div>
+          <div data-hagrid="span-25">
+            <div class="example-block">
+            
+            </div>
+          </div>
+          <div data-hagrid="span-25">
+            <div class="example-block">
+            
+            </div>
+          </div>
+        </div>
+
+
+        <div class="collection" data-hagrid="grid-row">
+          <div data-hagrid="span-25">
+            <div class="example-block">
+            
+            </div>
+          </div>
+          <div data-hagrid="span-50">
+            <div class="example-block">
+            
+            </div>
+          </div>
+          <div data-hagrid="span-25">
+            <div class="example-block">
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="collection" data-hagrid="grid-row">
+          <div data-hagrid="span-50">
+            <div class="example-block">
+            
+            </div>
+          </div>
+          <div data-hagrid="span-25">
+            <div class="example-block">
+            
+            </div>
+          </div>
+          <div data-hagrid="span-25">
+            <div class="example-block">
+            
+            </div>
+          </div>
+        </div>
+
+        <div class="collection" data-hagrid="grid-row">
+           <div data-hagrid="span-25">
+            <div class="example-block">
+            
+            </div>
+          </div>
+          <div data-hagrid="span-25">
+            <div class="example-block">
+            
+            </div>
+          </div>
+          <div data-hagrid="span-50">
+            <div class="example-block">
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    </body>
+</html>

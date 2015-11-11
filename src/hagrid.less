@@ -1,0 +1,211 @@
+
+/*
+	Hagrid - An HTML Attribute Grid
+	Author: Bradley Stafford
+
+	Hagrid (HTML Attribute Grid) is a small 
+	CSS layout library that allows you to keep 
+	your semantics separate from your layout by
+	utilizing HTML Data attributes. 
+
+	Hagrid was built with smaller projects in mind
+	(although you can probably get along just fine
+	with bigger projects).
+
+	There are a thousand-and-one Grid frameworks out
+	there, a lot of which will probably use class names
+	and render faster by milliseconds, but at the end of 
+	the day, if separation of concerns is at the top of 
+	your list then Hagrid might be able to help you out.
+
+	1. "Isn't using attribute selectors inefficient?"
+
+	Possibly. But it's almost so negligible you should
+	probably only worry about it if you've taken literally
+	every measure to optimize your site. CSS rendering 
+	engines have come a long way.
+	
+	http://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/
+*/
+
+*[data-hagrid="grid-container"],
+*[data-hagrid="grid-container"] * {
+	box-sizing: border-box;
+}
+
+
+/* ============================
+	Container Element
+
+	<div data-hagrid="grid-container">
+	</div>
+   ============================	
+*/
+*[data-hagrid="grid-container"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+/* 
+   ============================
+	All containers, all Spans
+	All rows. 
+   ============================	
+*/
+*[data-hagrid*="grid-container"]:after, 
+*[data-hagrid*="row"]:after,
+*[data-hagrid*="span"]:after,.clearfix:after {
+  content: ".";
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  font-size: 0;
+  line-height: 0;
+  width: 0;
+  height: 0;
+  clear: both;
+}
+
+/* 
+	Parent - Row Element 
+	[ I contain span-X children ]
+*/
+[data-hagrid*="grid-row"] {
+	margin: 8px 0; 
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+
+/*
+	Rows that have a row before it will have margin to vertically
+	space the content.
+*/
+*[data-hagrid*="grid-row"] + [data-hagrid*="grid-row"] {
+	margin: 8px 0 0 0; 
+}
+
+/* 
+	Child - Span Element 
+	[1][ 3 ][  5  ][1][1]
+*/
+*[data-hagrid*="grid-row"] [data-hagrid*="span-"]{
+	float: left;
+    padding: 0 4px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* ============================
+	Span Sections - Length of content
+   ============================	
+*/
+*[data-hagrid*="grid-row"] [data-hagrid*="span-10"]{ width: 10%; }
+*[data-hagrid*="grid-row"] [data-hagrid*="span-20"]{ width: 20%; }
+*[data-hagrid*="grid-row"] [data-hagrid*="span-25"]{ width: 25%; }
+*[data-hagrid*="grid-row"] [data-hagrid*="span-30"]{ width: 30%; }
+*[data-hagrid*="grid-row"] [data-hagrid*="span-40"]{ width: 40%; }
+*[data-hagrid*="grid-row"] [data-hagrid*="span-50"]{ width: 50%; }
+*[data-hagrid*="grid-row"] [data-hagrid*="span-60"]{ width: 60%; }
+*[data-hagrid*="grid-row"] [data-hagrid*="span-70"]{ width: 70%; }
+*[data-hagrid*="grid-row"] [data-hagrid*="span-75"]{ width: 75%; }
+*[data-hagrid*="grid-row"] [data-hagrid*="span-80"]{ width: 80%; }
+*[data-hagrid*="grid-row"] [data-hagrid*="span-90"]{ width: 90%; }
+*[data-hagrid*="grid-row"] [data-hagrid*="span-100"]{ width: 100%; }
+
+/* 										 	
+	============================
+	 Pre-X: Specifying a start point;
+	 or rather, the space before the 
+	 content starts
+	============================
+*/ 
+	*[data-hagrid*= "pre-10"]{ margin-left: 10%; }
+	*[data-hagrid*= "pre-20"]{ margin-left: 20%; }
+	*[data-hagrid*= "pre-25"]{ margin-left: 25%; }
+	*[data-hagrid*= "pre-30"]{ margin-left: 30%; }
+	*[data-hagrid*= "pre-40"]{ margin-left: 40%; }
+	*[data-hagrid*= "pre-50"]{ margin-left: 50%; }
+	*[data-hagrid*= "pre-60"]{ margin-left: 60%; }
+	*[data-hagrid*= "pre-70"]{ margin-left: 70%; }
+	*[data-hagrid*= "pre-75"]{ margin-left: 75%; }
+	*[data-hagrid*= "pre-80"]{ margin-left: 80%; }
+	*[data-hagrid*= "pre-90"]{ margin-left: 90%; }
+
+	/* 
+		Rows that contain prefixes should not have
+		the left margin that horizontal elements have
+	 */
+	[data-hagrid*="row"][data-hagrid*="pre"] { 
+		margin-left: 0; 
+	}
+
+	/* Rows that contain specific prefix widths */
+	*[data-hagrid*="row"][data-hagrid*= "pre-10"]{ margin-top: 10%; }	
+	*[data-hagrid*="row"][data-hagrid*= "pre-20"]{ margin-top: 20%; }
+	*[data-hagrid*="row"][data-hagrid*= "pre-25"]{ margin-top: 25%; }
+	*[data-hagrid*="row"][data-hagrid*= "pre-30"]{ margin-top: 30%; }
+	*[data-hagrid*="row"][data-hagrid*= "pre-40"]{ margin-top: 40%; }
+	*[data-hagrid*="row"][data-hagrid*= "pre-50"]{ margin-top: 50%; }
+	*[data-hagrid*="row"][data-hagrid*= "pre-60"]{ margin-top: 60%; }
+	*[data-hagrid*="row"][data-hagrid*= "pre-70"]{ margin-top: 70%; }
+	*[data-hagrid*="row"][data-hagrid*= "pre-80"]{ margin-top: 80%; }
+	*[data-hagrid*="row"][data-hagrid*= "pre-90"]{ margin-top: 90%; }
+
+/* 										 	
+	============================
+	 Post-X: Specifying white space
+	 following an element (horizontally)
+	============================
+*/ 
+	*[data-hagrid*="post-10"]{ margin-right: 10%; }
+	*[data-hagrid*="post-20"]{ margin-right: 20%; }
+	*[data-hagrid*="post-25"]{ margin-right: 25%; }
+	*[data-hagrid*="post-30"]{ margin-right: 30%; }
+	*[data-hagrid*="post-40"]{ margin-right: 40%; }
+	*[data-hagrid*="post-50"]{ margin-right: 50%; }
+	*[data-hagrid*="post-60"]{ margin-right: 60%; }
+	*[data-hagrid*="post-70"]{ margin-right: 70%; }
+	*[data-hagrid*="post-75"]{ margin-right: 75%; }
+	*[data-hagrid*="post-80"]{ margin-right: 80%; }
+	*[data-hagrid*="post-90"]{ margin-right: 90%; }
+
+/* 										 	
+	============================
+	 ROW Post-X: Specifying white space
+	 following a row element (vertically)
+	============================
+*/ 
+	*[data-hagrid*="row"][data-hagrid*= "post-10"]{ margin-bottom: 10%; }	
+	*[data-hagrid*="row"][data-hagrid*= "post-20"]{ margin-bottom: 20%; }
+	*[data-hagrid*="row"][data-hagrid*= "post-25"]{ margin-bottom: 25%; }
+	*[data-hagrid*="row"][data-hagrid*= "post-30"]{ margin-bottom: 30%; }
+	*[data-hagrid*="row"][data-hagrid*= "post-40"]{ margin-bottom: 40%; }
+	*[data-hagrid*="row"][data-hagrid*= "post-50"]{ margin-bottom: 50%; }
+	*[data-hagrid*="row"][data-hagrid*= "post-60"]{ margin-bottom: 60%; }
+	*[data-hagrid*="row"][data-hagrid*= "post-70"]{ margin-bottom: 70%; }
+	*[data-hagrid*="row"][data-hagrid*= "post-80"]{ margin-bottom: 80%; }
+	*[data-hagrid*="row"][data-hagrid*= "post-90"]{ margin-bottom: 90%; }
+
+/* 
+	=============================
+	First and Last of type. Handles
+	the first and last element of each
+	row such that content elements will
+	hug the container wall at the first
+	and last element
+	=============================
+*/
+*[data-hagrid*="span-"]:first-of-type {
+	padding-left: 0;
+}
+
+*[data-hagrid*="span-"]:last-of-type {
+	padding-right: 0;
+}
