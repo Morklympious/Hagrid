@@ -12,6 +12,9 @@
 	(although you can probably get along just fine
 	with bigger projects).
 
+	Hagrid was also built to primarily make a joke. 
+	A pun, really.
+
 	There are a thousand-and-one Grid frameworks out
 	there, a lot of which will probably use class names
 	and render faster by milliseconds, but at the end of 
@@ -126,7 +129,7 @@
 	 ROW Pre-X: Specifying white space
 	 preceding an element (vertically)
 	============================
-*/ 
+	*/ 
 	*[data-hagrid*="row"][data-hagrid*= "pre-10"]{ margin-top: 10%; }	
 	*[data-hagrid*="row"][data-hagrid*= "pre-20"]{ margin-top: 20%; }
 	*[data-hagrid*="row"][data-hagrid*= "pre-25"]{ margin-top: 25%; }
@@ -219,5 +222,35 @@
  */
 	*[data-hagrid*="row"][data-hagrid*="pre"] { 
 		margin-left: 0; 
+	}
+
+
+
+
+	@media screen and (max-width: 960px) {
+
+		*[data-hagrid*="grid-row"]  [data-hagrid*="span-"] {
+			display: block;
+			width: 50%;
+			 
+		}
+
+		*[data-hagrid*="grid-row"]  [data-hagrid*="span-100"] {
+			display: block;
+			width: 100%;
+			 
+		}
+		
+	}
+
+	@media screen and (max-width: 768px) {
+
+		*[data-hagrid*="grid-row"]  [data-hagrid*="span-"] {
+			display: block;
+			float: none;
+			width: 100%;
+			padding: 4px 0; 
+		}
+
 	}
 
