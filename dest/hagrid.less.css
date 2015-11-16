@@ -68,36 +68,64 @@
   clear: both;
 }
 /* 
-  Parent - Row Element 
-  [ I contain span-X children ]
+  Stylings for the grid row and its 
+  contained row column children
 */
-[data-hagrid*="grid-row"] {
+*[data-hagrid*="grid-row"] {
+  /*
+      Base row stylings
+    */
   margin: 8px 0;
   padding-left: 0;
   padding-right: 0;
+  /*
+      Rows that have a row before it will have margin to vertically
+      space the content.
+    */
+  /* 
+      Child - Span Element 
+      [1][ 3 ][  5  ][1][1]
+    */
+  /* 
+      ============================
+      Span Sections - Length of content
+      ============================ 
+    */
+  /*                                          
+    ============================
+     ROW Pre-X: Specifying white space
+     preceding a row element (vertically)
+    ============================
+    */
+  /*                                          
+    ============================
+     ROW Post-X: Specifying white space
+     following a row element (vertically)
+    ============================
+    */
+  /*                                          
+    ============================
+     COLUMN Pre-X: Specifying white space preceding
+     an element (horizontally)
+    ============================
+    */
+  /*                                          
+    ============================
+     COLUMN Post-X: Specifying white space
+     following an element (horizontally)
+    ============================
+    */
 }
-/*
-  Rows that have a row before it will have margin to vertically
-  space the content.
-*/
 *[data-hagrid*="grid-row"] + [data-hagrid*="grid-row"] {
   margin: 8px 0 0 0;
 }
-/* 
-  Child - Span Element 
-  [1][ 3 ][  5  ][1][1]
-*/
-*[data-hagrid*="grid-row"] [data-hagrid*="span-"] {
+*[data-hagrid*="grid-row"] *[data-hagrid*="span-"] {
   float: left;
   padding: 0 8px;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* ============================
-  Span Sections - Length of content
-   ============================ 
-*/
 *[data-hagrid*="grid-row"] *[data-hagrid*="span-10"] {
   width: 10%;
 }
@@ -134,12 +162,6 @@
 *[data-hagrid*="grid-row"] *[data-hagrid*="span-100"] {
   width: 100%;
 }
-/*                                          
-============================
- ROW Pre-X: Specifying white space
- preceding an element (vertically)
-============================
-*/
 *[data-hagrid*="grid-row"][data-hagrid*="pre-10"] {
   margin-top: 10%;
 }
@@ -170,12 +192,6 @@
 *[data-hagrid*="grid-row"][data-hagrid*="pre-90"] {
   margin-top: 90%;
 }
-/*                                          
-============================
- ROW Post-X: Specifying white space
- following a row element (vertically)
-============================
-*/
 *[data-hagrid*="grid-row"][data-hagrid*="post-10"] {
   margin-bottom: 10%;
 }
@@ -206,12 +222,6 @@
 *[data-hagrid*="grid-row"][data-hagrid*="post-90"] {
   margin-bottom: 90%;
 }
-/*                                          
-============================
- COLUMN Pre-X: Specifying a start point;
- or rather, the space before the content
-============================
-*/
 *[data-hagrid*="grid-row"] *[data-hagrid*="pre-10"] {
   margin-left: 10%;
 }
@@ -245,12 +255,6 @@
 *[data-hagrid*="grid-row"] *[data-hagrid*="pre-90"] {
   margin-left: 90%;
 }
-/*                                          
-============================
- COLUMN Post-X: Specifying white space
- following an element (horizontally)
-============================
-*/
 *[data-hagrid*="grid-row"] *[data-hagrid*="post-10"] {
   margin-right: 10%;
 }
