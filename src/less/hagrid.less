@@ -12,8 +12,8 @@
   (although you can probably get along just fine
   with bigger projects).
 
-    Hagrid was also built to primarily make a joke. 
-    A pun, really.
+  Hagrid was also built to primarily make a joke. 
+  A pun, really.
 
   There are a thousand-and-one Grid frameworks out
   there, a lot of which will probably use class names
@@ -31,9 +31,10 @@
   http://benfrain.com/css-performance-revisited-selectors-bloat-expensive-styles/
 */
 
-@row-margin: 8px;
+@import "mixins/_mixins.less";
 
-@column-padding: 8px;
+@row-margin: 8px 0;
+@column-side-padding: 0 4px;
 
 *[data-hagrid="grid-container"],
 *[data-hagrid="grid-container"] * {
@@ -82,7 +83,7 @@
   [ I contain span-X children ]
 */
 [data-hagrid*="grid-row"] {
-  margin: 8px 0; 
+  margin: @row-margin;
   padding-left: 0;
   padding-right: 0;
 }
@@ -103,7 +104,7 @@
 */
 *[data-hagrid*="grid-row"] [data-hagrid*="span-"]{
   float: left;
-    padding: 0 4px;
+    padding: @column-side-padding;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
