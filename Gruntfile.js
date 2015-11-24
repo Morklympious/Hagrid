@@ -3,14 +3,14 @@ module.exports = function(grunt) {
 
     cssmin: {
       files: {
-        src: 'src/*.css',
+        src: 'src/lib/css/*.css',
         dest: 'dest/hagrid.css'
       }
     },
 
     less: {
       files: {
-        src: 'src/less/hagrid.less',
+        src: 'src/lib/less/hagrid.less',
         dest: 'dest/hagrid.less.css'
       }
     }
