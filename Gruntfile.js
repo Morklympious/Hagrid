@@ -19,6 +19,7 @@ module.exports = function(grunt) {
   
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-less');
+  grunt.loadNpmTasks('grunt-contrib-handlebars');
 
   grunt.registerTask('default', ['cssmin', 'less']);
 };

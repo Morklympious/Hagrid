@@ -91,6 +91,12 @@
 	margin: 8px 0 0 0; 
 }
 
+/* Nested Grid Rows */
+*[data-hagrid*="grid-row"]   *[data-hagrid*="grid-row"] {
+	margin: 0;
+	padding: 0;
+}
+
 /* 
 	Child - Span Element 
 	[1][ 3 ][  5  ][1][1]
@@ -114,9 +120,11 @@
 *[data-hagrid*="grid-row"]  [data-hagrid*="span-20"]{ width: 20%; }
 *[data-hagrid*="grid-row"]  [data-hagrid*="span-25"]{ width: 25%; }
 *[data-hagrid*="grid-row"]  [data-hagrid*="span-30"]{ width: 30%; }
+*[data-hagrid*="grid-row"]  [data-hagrid*="span-33"]{ width: 33%; }
 *[data-hagrid*="grid-row"]  [data-hagrid*="span-40"]{ width: 40%; }
 *[data-hagrid*="grid-row"]  [data-hagrid*="span-50"]{ width: 50%; }
 *[data-hagrid*="grid-row"]  [data-hagrid*="span-60"]{ width: 60%; }
+*[data-hagrid*="grid-row"]  [data-hagrid*="span-66"]{ width: 66%; }
 *[data-hagrid*="grid-row"]  [data-hagrid*="span-70"]{ width: 70%; }
 *[data-hagrid*="grid-row"]  [data-hagrid*="span-75"]{ width: 75%; }
 *[data-hagrid*="grid-row"]  [data-hagrid*="span-80"]{ width: 80%; }

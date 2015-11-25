@@ -9,8 +9,8 @@
         <title>Basic Grid Function</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="../src/lib/hagrid.css">
-        <link rel="stylesheet" type="text/css" href="css/base.css" />
+        <link rel="stylesheet" type="text/css" href="/src/lib/css/hagrid.css">
+        <link rel="stylesheet" type="text/css" href="examples/css/base.css" />
 
         <style>
           body {
@@ -35,18 +35,26 @@
           }
 
           .example-block {
-            height: 80px;
+            height: 30px;
             padding: 8px;
-            background: #DDD;
+            background: #CCC;
           }
         </style>
     </head>
     <body>
+
     <div class="wrapper">
-        <div class="header">
-          <h1>Hagrid</h1>
-          <h2>Basic layouts (in tenths)</h2>
-        </div>
+      <div class="header">
+        <h1>Hagrid</h1>
+      </div>
+
+      <p> 
+      Hagrid is a "Semantic" grid framework, but it's mostly a pun. It's semantic in the sense that it won't leave all of your precious classes muddled with names that don't make sense to another developer. I remember reading about semantic classes with layout frameworks and saw a small (but still valid) problem that could use solving. 
+      </p>
+
+      <p>
+      You want to use Hagrid? feel free. <em>You're a gridder, Harry.</em> 
+      </p>
 
       <div class="grid content" data-hagrid="grid-container">
 
@@ -125,26 +133,21 @@
           </div>
         </div>
 
-        <div class="collection" data-hagrid="grid-row">
-           <div data-hagrid="span-60">
-            <div class="example-block">
-                
-            </div>
-          </div>
-          <div data-hagrid="span-40">
-            <div class="example-block">
-            
-            </div>
-          </div>
-        </div>
+         <div class="collection" data-hagrid="grid-row">
+          <div data-hagrid="span-33">
 
-        <div class="collection" data-hagrid="grid-row">
-           <div data-hagrid="span-70">
+          <div class="collection" data-hagrid="grid-row">
+          <div data-hagrid="span-33">
             <div class="example-block">
-                
+              
             </div>
           </div>
-          <div data-hagrid="span-30">
+          <div data-hagrid="span-33">
+            <div class="example-block">
+              
+            </div>
+          </div>
+          <div data-hagrid="span-33">
             <div class="example-block">
             
             </div>
@@ -152,13 +155,15 @@
         </div>
 
 
-        <div class="collection" data-hagrid="grid-row">
-           <div data-hagrid="span-80">
+
+
+          </div>
+          <div data-hagrid="span-33">
             <div class="example-block">
-                
+              
             </div>
           </div>
-          <div data-hagrid="span-20">
+          <div data-hagrid="span-33">
             <div class="example-block">
             
             </div>
@@ -166,17 +171,18 @@
         </div>
 
         <div class="collection" data-hagrid="grid-row">
-           <div data-hagrid="span-90">
+           <div data-hagrid="span-66">
             <div class="example-block">
                 
             </div>
           </div>
-          <div data-hagrid="span-10">
+          <div data-hagrid="span-33">
             <div class="example-block">
             
             </div>
           </div>
         </div>
+
 
       </div>
         </div>
