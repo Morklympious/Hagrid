@@ -1,59 +1,14 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Basic Grid Function</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/src/lib/css/hagrid.css">
-    <link rel="stylesheet" type="text/css" href="examples/css/base.css" />
-
-    <style>
-      body {
-        font-family: sans-serif;
-      }
-      .wrapper {
-        margin: 40px auto;
-        width: 80%;
-        line-height: 1.6;
-        font-size: 18px;
-        color: #444;
-        padding: 0 10px; 
-      }
-
-      .content {
-        padding: 8px;
-        outline: 1px solid #000;
-      }
-
-      .collection {
-        padding: 8px;
-      }
-
-      .example-block {
-        height: 30px;
-        padding: 8px;
-        background: #CCC;
-      }
-    </style>
-  </head>
-  <body>
-
-  <div class="wrapper">
-    <div class="header">
-      <h1>Hagrid</h1>
-    </div>
+  <div class="header">
+    <h1>{{index.name}}</h1>
+  </div>
 
     <p> 
-    Hagrid is a "Semantic" grid framework, but it's mostly a pun. It's semantic in the sense that it won't leave all of your precious classes muddled with names that don't make sense to another developer. I remember reading about semantic classes with layout frameworks and saw a small (but still valid) problem that could use solving. 
+   	 {{index.text}}
     </p>
 
     <p>
-    You want to use Hagrid? feel free. <em>You're a gridder, Harry.</em> 
+     {{{index.prompt}}}
     </p>
 
     <div class="grid content" data-hagrid="grid-container">
