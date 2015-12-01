@@ -8,8 +8,9 @@ module.exports = function(grunt) {
         dest: 'build/hagrid.css'
       },
       site: {
-        src: 'src/lib/css/*.css',
-        dest: 'site/css/hagrid.css'
+        files: {
+          'site/static/css/hagrid.css': ['src/lib/css/*.css', 'src/site/static/css/*.css']
+        }
       }
     },
 
@@ -25,18 +26,19 @@ module.exports = function(grunt) {
 
       // Global Options
       options: {
-            layout: ['default.hbs'],
-            layoutdir: 'src/site/layouts',
-            partials: 'src/site/partials/*.hbs',
-            data: ['src/examples/data/*.{json,yml}'],
-            ext: '.html',
-            expand: true
+        layout: ['default.hbs'],
+        layoutdir: 'src/site/layouts',
+        partials: 'src/site/partials/**/*.hbs',
+        data: ['src/site/data/*.{json,yml}'],
+        ext: '.html',
+        expand: true,
+        assets: './static'
       },
 
       site: {
         files: [
           // Index
-          {expand: true, cwd: 'src/examples/pages/', src: 'index.hbs', dest: 'site', ext: '.html'}
+          {expand: true, cwd: 'src/site/pages/', src: '*.hbs', dest: 'site', ext: '.html'}
         ]
       }
 
@@ -49,7 +51,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('assemble');
 
   grunt.registerTask('default', ['cssmin', 'less']);
-  grunt.registerTask('compile', ['grunt-handlebars-compiler']);
+  grunt.registerTask('all', ['cssmin', 'less', 'assemble']);
 };
 
 

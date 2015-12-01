@@ -1,5 +1,7 @@
 {
-	"name": "Hagrid",
-	"text": "Hagrid is a \"Semantic\" grid framework, but it's mostly a pun. It's semantic in the sense that it won't leave all of your precious classes muddled with names that don't make sense to another developer. I remember reading about semantic classes with layout frameworks and saw a small (but still valid) problem that could use solving. ",
-	"prompt": "You want to use Hagrid? feel free. <em>You're a gridder, Harry.</em> "
+	"heading": "What is Hagrid?",
+	"body": [
+		"Hagrid is a \"Semantic\" grid framework, but it's mostly a pun. It's semantic in the sense that it won't leave all of your precious classes muddled with names that don't make sense to another developer. I remember reading about semantic classes with layout frameworks and saw a small (but still valid) problem that could use solving. ",
+		"You want to use Hagrid? feel free. <em>You're a gridder, Harry.</em> "
+	]
 }
