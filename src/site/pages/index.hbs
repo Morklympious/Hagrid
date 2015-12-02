@@ -1,7 +1,10 @@
-<div class="header">
-  <h1>{{index.heading}}</h1>
-</div>
+{{#index}}
 
-{{#each index.body}}
-  <p> {{{this}}} </p>
-{{/each}}
+  {{>heading}}
+
+
+  {{#each body}}
+    <p> {{{this}}} </p>
+  {{/each}}
+
+{{/index}}

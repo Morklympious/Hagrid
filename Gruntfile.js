@@ -1,3 +1,5 @@
+var hilite = require('hljs');
+
 module.exports = function(grunt) {
   grunt.initConfig({
 
@@ -32,7 +34,18 @@ module.exports = function(grunt) {
         data: ['src/site/data/*.{json,yml}'],
         ext: '.html',
         expand: true,
-        assets: './static'
+        assets: './static',
+        marked: {
+          breaks: false,
+          gfm: true,
+          langPrefix: 'language-',
+          pedantic: false,
+          sanitize: false,
+          silent: false,
+          smartLists: false,
+          smartypants: false,
+          tables: true 
+        }
       },
 
       site: {
