@@ -1,0 +1,39 @@
+<p> {{splits.leadingText}} </p>
+
+{{#markdown}}
+{{> code-splits}}
+{{/markdown}}
+
+
+<div class="example content" data-hagrid="grid-container">
+	 <!-- Full size --> 
+    <div class="collection" data-hagrid="grid-row">
+      {{> hagrid-span-block hagrid="span-100" }}
+    </div>
+ 
+    <div class="collection" data-hagrid="grid-row">
+	    {{> hagrid-span-block hagrid='span-10' }}
+	    {{> hagrid-span-block hagrid="span-90" }}
+    </div>
+
+
+    <div class="collection" data-hagrid="grid-row">
+	    {{> hagrid-span-block hagrid="span-20" }}
+	    {{> hagrid-span-block hagrid="span-80" }}
+    </div>
+
+    <div class="collection" data-hagrid="grid-row">
+	    {{> hagrid-span-block hagrid="span-30" }}
+      {{> hagrid-span-block hagrid="span-70" }}
+    </div>
+
+    <div class="collection" data-hagrid="grid-row">
+ 			{{> hagrid-span-block hagrid="span-40" }}
+	    {{> hagrid-span-block hagrid="span-60" }}
+    </div>
+
+    <div class="collection" data-hagrid="grid-row">
+ 			{{> hagrid-span-block hagrid="span-50" }}
+	    {{> hagrid-span-block hagrid="span-50" }}
+    </div>
+</div>

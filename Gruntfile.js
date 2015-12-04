@@ -9,7 +9,7 @@ module.exports = function(grunt) {
       },
       site: {
         files: {
-          'site/static/css/hagrid.css': ['src/lib/css/*.css', 'src/site/static/css/*.css']
+          'site/static/css/site.css': ['src/lib/css/*.css', 'src/site/static/css/*.css']
         }
       }
     },
@@ -28,13 +28,14 @@ module.exports = function(grunt) {
       options: {
         layout: ['default.hbs'],
         layoutdir: 'src/site/layouts',
-        partials: 'src/site/partials/**/*.hbs',
-        data: ['src/site/data/*.{json,yml}'],
+        partials: ['src/site/partials/**/*.hbs', 'src/site/partials/examples/markdown/*.md'],
+        data: ['src/site/data/*.{json,yml}', 'src/site/data/examples/*.json'],
         ext: '.html',
         expand: true,
         assets: './static',
         marked: {
           highlight: function (code) {
+            console.log('HIGHLIGHT CALLED')
             return require('highlight.js').highlightAuto(code).value;
           },
           breaks: false,
@@ -46,7 +47,8 @@ module.exports = function(grunt) {
           smartLists: false,
           smartypants: false,
           tables: true 
-        }
+        },
+        helpers: ['handlebars-helper-md'],
       },
 
       site: {
@@ -62,7 +64,7 @@ module.exports = function(grunt) {
   
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('assemble');
+  grunt.loadNpmTasks('grunt-assemble');
 
   grunt.registerTask('default', ['cssmin', 'less']);
   grunt.registerTask('all', ['cssmin', 'less', 'assemble']);
