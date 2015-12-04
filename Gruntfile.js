@@ -1,5 +1,3 @@
-var hilite = require('hljs');
-
 module.exports = function(grunt) {
   grunt.initConfig({
 
@@ -36,6 +34,9 @@ module.exports = function(grunt) {
         expand: true,
         assets: './static',
         marked: {
+          highlight: function (code) {
+            return require('highlight.js').highlightAuto(code).value;
+          },
           breaks: false,
           gfm: true,
           langPrefix: 'language-',
