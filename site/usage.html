@@ -1,0 +1,187 @@
+
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>Hagrid -- HTML attribute grid</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="../static/css/site.css">
+      <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
+
+    </head>
+    <body>
+
+    <div class="navbar">
+    		<div class="navbar-contents">
+    			<h1 class="header">
+    				<span>Hagrid</span>
+    			</h1>
+    			<nav class="navigation">
+    					<ul class="navigation-items">
+    						<li class="navigation-item"><a href="/">Home</a></li>
+    						<li class="navigation-item"><a href="/usage">Usage</a></li>
+    						<li class="navigation-item"><a href="/examples">Examples</a></li>
+    						<li class="navigation-item"><a href="/about">About</a></li>
+    					</ul>
+    			</nav>
+    		</div>
+    </div>	
+    <div class="wrapper">
+	<div class="heading">
+	  <h1>Usage</h1>
+	</div>
+<p> 
+    Okay, there are three main hagrid attributes you'll need for building grids: 
+</p>
+
+<pre><code> <span class="hljs-meta">data</span>-hagrid=<span class="hljs-string">"grid-container"</span> 
+ <span class="hljs-meta">data</span>-hagrid=<span class="hljs-string">"grid-row"</span> 
+ <span class="hljs-meta">data</span>-hagrid=<span class="hljs-string">"span-X"</span> </code></pre>
+
+<p> Here's how you set it up: </p>
+
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example content"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-container"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Rows --&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+<p>
+  As you can see, the beginnings of our grid are made with data attributes, from here we can add rows to our container. A grid container may contain any number of grid rows.
+</p>
+
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example content"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-container"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Rows --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collection"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Columns/spans --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collection"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Columns/spans --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collection"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Columns/spans --&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+<p>
+  Let's throw down the data attributes to make columns!
+</p>
+
+
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example content"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-container"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Rows --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collection"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Columns/spans --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-25"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>    
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-75"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>    
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collection"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Columns/spans --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-75"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>    
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-25"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>    
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collection"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Columns/spans --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-50"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>    
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-50"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>    
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+<p> And if we put that syntax on a page, it looks like this: </p>
+
+<div class="example content" data-hagrid="grid-container">
+    <!-- Rows -->
+    <div class="collection" data-hagrid="grid-row">
+        <!-- Columns/spans -->
+        <div data-hagrid="span-25">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+        <div data-hagrid="span-75">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+    </div>
+ 
+    <div class="collection" data-hagrid="grid-row">
+        <!-- Columns/spans -->
+        <div data-hagrid="span-75">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+        <div data-hagrid="span-25">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+    </div>
+
+    <div class="collection" data-hagrid="grid-row">
+        <!-- Columns/spans -->
+        <div data-hagrid="span-50">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+        <div data-hagrid="span-50">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+        -->
+    </body>
+
+    <div class="footer">
+    	<p> Created by Bradley Stafford </p>
+    </div></html>

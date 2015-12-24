@@ -1,11 +1,10 @@
 {{#about}}
-
   {{>heading}}
-
-
-  {{#each body}}
-    <p> {{{this}}} </p>
+  {{#each groups}}
+  	{{>heading this}}
+  	{{#each body}}
+    	<p> {{{this}}} </p>
+    {{/each}}
   {{/each}}
-
 {{/about}}
 

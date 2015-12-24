@@ -35,7 +35,6 @@ module.exports = function(grunt) {
         assets: './static',
         marked: {
           highlight: function (code) {
-            console.log('HIGHLIGHT CALLED')
             return require('highlight.js').highlightAuto(code).value;
           },
           breaks: false,
@@ -54,7 +53,8 @@ module.exports = function(grunt) {
       site: {
         files: [
           // Index
-          {expand: true, cwd: 'src/site/pages/', src: '*.hbs', dest: 'site', ext: '.html'}
+          {expand: true, cwd: 'src/site/pages/', src: '*.hbs', dest: 'site', ext: '.html'},
+        
         ]
       }
 

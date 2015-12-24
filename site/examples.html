@@ -12,16 +12,20 @@
       <meta name="description" content="">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <link rel="stylesheet" type="text/css" href="../static/css/site.css">
+      <link href='https://fonts.googleapis.com/css?family=Chango' rel='stylesheet' type='text/css'>
 
     </head>
     <body>
 
     <div class="navbar">
     		<div class="navbar-contents">
-    			<h1 class="header">Hagrid</h1>
+    			<h1 class="header">
+    				<span>Hagrid</span>
+    			</h1>
     			<nav class="navigation">
     					<ul class="navigation-items">
     						<li class="navigation-item"><a href="/">Home</a></li>
+    						<li class="navigation-item"><a href="/usage">Usage</a></li>
     						<li class="navigation-item"><a href="/examples">Examples</a></li>
     						<li class="navigation-item"><a href="/about">About</a></li>
     					</ul>
@@ -35,68 +39,41 @@
 	  Hagrid differs from other libraries only in the way that the styles are accessed, so these examples should seem very familiar! 
 	  </p>
 
-<p>  </p>
-
-<pre><code class="language-html">    &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"semantic classes"</span> data-hagrid=<span class="hljs-string">"grid-container"</span>&gt;
-        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"child"</span> data-hagrid=<span class="hljs-string">"span-30"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
-        &lt;<span class="hljs-keyword">div</span> <span class="hljs-built_in">class</span>=<span class="hljs-string">"child"</span> data-hagrid=<span class="hljs-string">"span-70"</span>&gt;&lt;/<span class="hljs-keyword">div</span>&gt;
-    &lt;/<span class="hljs-keyword">div</span>&gt;</code></pre>
-
-
+<h2>Blog with a sidebar</h2>
 <div class="example content" data-hagrid="grid-container">
-	 <!-- Full size --> 
+    <!-- Rows -->
     <div class="collection" data-hagrid="grid-row">
-       <div data-hagrid="span-100">
-       <div class="example-block">
-       </div> </div>
+        <!-- Columns/spans -->
+        <div data-hagrid="span-20">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+        <div data-hagrid="span-80">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+    </div>
+</div>
+
+<h2>Fourths</h2>
+<div class="example content" data-hagrid="grid-container">
+    <!-- Rows -->
+    <div class="collection" data-hagrid="grid-row">
+        <!-- Columns/spans -->
     </div>
  
     <div class="collection" data-hagrid="grid-row">
-	     <div data-hagrid="span-10">
-	     <div class="example-block">
-	     </div> </div>
-	     <div data-hagrid="span-90">
-	     <div class="example-block">
-	     </div> </div>
-    </div>
-
-
-    <div class="collection" data-hagrid="grid-row">
-	     <div data-hagrid="span-20">
-	     <div class="example-block">
-	     </div> </div>
-	     <div data-hagrid="span-80">
-	     <div class="example-block">
-	     </div> </div>
+        <!-- Columns/spans -->
     </div>
 
     <div class="collection" data-hagrid="grid-row">
-	     <div data-hagrid="span-30">
-	     <div class="example-block">
-	     </div> </div>
-       <div data-hagrid="span-70">
-       <div class="example-block">
-       </div> </div>
-    </div>
-
-    <div class="collection" data-hagrid="grid-row">
- 			 <div data-hagrid="span-40">
- 			 <div class="example-block">
- 			 </div> </div>
-	     <div data-hagrid="span-60">
-	     <div class="example-block">
-	     </div> </div>
-    </div>
-
-    <div class="collection" data-hagrid="grid-row">
- 			 <div data-hagrid="span-50">
- 			 <div class="example-block">
- 			 </div> </div>
-	     <div data-hagrid="span-50">
-	     <div class="example-block">
-	     </div> </div>
+        <!-- Columns/spans -->
     </div>
 </div>
+
+
     </div>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
@@ -110,4 +87,7 @@
         </script>
         -->
     </body>
-</html>
+
+    <div class="footer">
+    	<p> Created by Bradley Stafford </p>
+    </div></html>
