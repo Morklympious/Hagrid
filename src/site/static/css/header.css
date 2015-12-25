@@ -1,8 +1,8 @@
 /*header */
 
 .header {
-	display: inline-block;
 	font-family: "Chango", sans-serif;
+	font-size: 3rem;
 }
 
 	.logo-image {

@@ -1,27 +1,73 @@
-<h2>Blog with a sidebar</h2>
+<h3>Main Column with sidebar</h3>
 <div class="example content" data-hagrid="grid-container">
     <!-- Rows -->
     <div class="collection" data-hagrid="grid-row">
         <!-- Columns/spans -->
-        {{>hagrid-span-block hagrid="span-20"}}
-        {{>hagrid-span-block hagrid="span-80"}}
+        {{>hagrid-span-block hagrid="span-33"}}
+        {{>hagrid-span-block hagrid="span-66"}}
     </div>
 </div>
 
-<h2>Fourths</h2>
+<h3>Columns in fourths</h3>
 <div class="example content" data-hagrid="grid-container">
     <!-- Rows -->
     <div class="collection" data-hagrid="grid-row">
         <!-- Columns/spans -->
+        {{>hagrid-span-block hagrid="span-25"}}
+        {{>hagrid-span-block hagrid="span-25"}}
+        {{>hagrid-span-block hagrid="span-25"}}
+        {{>hagrid-span-block hagrid="span-25"}}
     </div>
- 
+</div>
+
+<h3>Columns in thirds</h3>
+<div class="example content" data-hagrid="grid-container">
+    <!-- Rows -->
     <div class="collection" data-hagrid="grid-row">
         <!-- Columns/spans -->
+        {{>hagrid-span-block hagrid="span-33"}}
+        {{>hagrid-span-block hagrid="span-33"}}
+        {{>hagrid-span-block hagrid="span-33"}}
+    </div>
+</div>
+
+<h3>Nested grid rows</h3>
+<div class="example content" data-hagrid="grid-container">
+    <!-- Rows -->
+    <div class="collection" data-hagrid="grid-row">
+        <!-- Columns/spans -->
+        <div data-hagrid="span-50">
+            <div data-hagrid="grid-row">
+                {{>hagrid-span-block hagrid="span-33"}}
+                {{>hagrid-span-block hagrid="span-33"}}
+                {{>hagrid-span-block hagrid="span-33"}}
+            </div>
+        </div>
+        {{>hagrid-span-block hagrid="span-50"}}
     </div>
 
     <div class="collection" data-hagrid="grid-row">
         <!-- Columns/spans -->
+        {{>hagrid-span-block hagrid="span-100"}}
     </div>
+
+    <div class="collection" data-hagrid="grid-row">
+        <!-- Columns/spans -->
+        <div data-hagrid="span-75">
+            <div data-hagrid="grid-row">
+                {{>hagrid-span-block hagrid="span-33"}}
+                {{>hagrid-span-block hagrid="span-66"}}
+            </div>
+        </div>
+        <div data-hagrid="span-25">
+            <div data-hagrid="grid-row">
+                {{>hagrid-span-block hagrid="span-50"}}
+                {{>hagrid-span-block hagrid="span-50"}}
+            </div>
+        </div>
+    </div>
+
 </div>
+
 
 

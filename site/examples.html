@@ -36,20 +36,23 @@
 	<div class="heading">
 	  <h1>Examples</h1>
 	</div>	  <p> 
-	  Hagrid differs from other libraries only in the way that the styles are accessed, so these examples should seem very familiar! 
+	  Hagrid differs from other libraries only in the way that the styles are accessed, so a lot of what you see with other grid frameworks will translate directly to your usage here. 
+	  </p>
+	  <p> 
+	  Out of the box, Hagrid supports nested rows. So if you need to break a 75% span down into thirds, you shouldn't have a problem. 
 	  </p>
 
-<h2>Blog with a sidebar</h2>
+<h3>Main Column with sidebar</h3>
 <div class="example content" data-hagrid="grid-container">
     <!-- Rows -->
     <div class="collection" data-hagrid="grid-row">
         <!-- Columns/spans -->
-        <div data-hagrid="span-20">
+        <div data-hagrid="span-33">
         	<div class="example-block">
         	
         	</div>	
         </div>
-        <div data-hagrid="span-80">
+        <div data-hagrid="span-66">
         	<div class="example-block">
         	
         	</div>	
@@ -57,21 +60,131 @@
     </div>
 </div>
 
-<h2>Fourths</h2>
+<h3>Columns in fourths</h3>
 <div class="example content" data-hagrid="grid-container">
     <!-- Rows -->
     <div class="collection" data-hagrid="grid-row">
         <!-- Columns/spans -->
+        <div data-hagrid="span-25">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+        <div data-hagrid="span-25">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+        <div data-hagrid="span-25">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+        <div data-hagrid="span-25">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
     </div>
- 
+</div>
+
+<h3>Columns in thirds</h3>
+<div class="example content" data-hagrid="grid-container">
+    <!-- Rows -->
     <div class="collection" data-hagrid="grid-row">
         <!-- Columns/spans -->
+        <div data-hagrid="span-33">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+        <div data-hagrid="span-33">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+        <div data-hagrid="span-33">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
+    </div>
+</div>
+
+<h3>Nested grid rows</h3>
+<div class="example content" data-hagrid="grid-container">
+    <!-- Rows -->
+    <div class="collection" data-hagrid="grid-row">
+        <!-- Columns/spans -->
+        <div data-hagrid="span-50">
+            <div data-hagrid="grid-row">
+                <div data-hagrid="span-33">
+                	<div class="example-block">
+                	
+                	</div>	
+                </div>
+                <div data-hagrid="span-33">
+                	<div class="example-block">
+                	
+                	</div>	
+                </div>
+                <div data-hagrid="span-33">
+                	<div class="example-block">
+                	
+                	</div>	
+                </div>
+            </div>
+        </div>
+        <div data-hagrid="span-50">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
     </div>
 
     <div class="collection" data-hagrid="grid-row">
         <!-- Columns/spans -->
+        <div data-hagrid="span-100">
+        	<div class="example-block">
+        	
+        	</div>	
+        </div>
     </div>
+
+    <div class="collection" data-hagrid="grid-row">
+        <!-- Columns/spans -->
+        <div data-hagrid="span-75">
+            <div data-hagrid="grid-row">
+                <div data-hagrid="span-33">
+                	<div class="example-block">
+                	
+                	</div>	
+                </div>
+                <div data-hagrid="span-66">
+                	<div class="example-block">
+                	
+                	</div>	
+                </div>
+            </div>
+        </div>
+        <div data-hagrid="span-25">
+            <div data-hagrid="grid-row">
+                <div data-hagrid="span-50">
+                	<div class="example-block">
+                	
+                	</div>	
+                </div>
+                <div data-hagrid="span-50">
+                	<div class="example-block">
+                	
+                	</div>	
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
+
 
 
     </div>

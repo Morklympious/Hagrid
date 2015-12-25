@@ -15,8 +15,8 @@
 			"heading": "Acknowledgements",
 			"body": [	
 				"Of course, no man is an island. I'd be lying through my teeth if I said I came up with this idea without some inspiration",
-				"Thanks to Unsemantic",
-				"Thanks to Concrete"
+				"Thanks to Nathan Smith's <a href=\"http://unsemantic.com/\">Unsemantic</a> for exemplifying the silliness of semantics",
+				"Thanks to David Lumley's <a href=\"https://github.com/davidlumley/concrete\">Concrete</a> for yet another beautiful css grid library example"
 			]
 		}
 	]
