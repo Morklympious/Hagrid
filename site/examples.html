@@ -22,6 +22,7 @@
     			<h1 class="header">
     				<span>Hagrid</span>
     			</h1>
+    			<h2 class="header-flavor">A CSS grid framework for people who like puns... Or Harry Potter.</h2>
     			<nav class="navigation">
     					<ul class="navigation-items">
     						<li class="navigation-item"><a href="/">Home</a></li>
@@ -43,6 +44,22 @@
 	  </p>
 
 <h3>Main Column with sidebar</h3>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example content"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-container"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Rows --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collection"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Columns/spans --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-33"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-66"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 <div class="example content" data-hagrid="grid-container">
     <!-- Rows -->
     <div class="collection" data-hagrid="grid-row">
@@ -50,17 +67,43 @@
         <div data-hagrid="span-33">
         	<div class="example-block">
         	
-        	</div>	
+        	</div>
         </div>
         <div data-hagrid="span-66">
         	<div class="example-block">
         	
-        	</div>	
+        	</div>
         </div>
     </div>
 </div>
 
 <h3>Columns in fourths</h3>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example content"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-container"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Rows --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collection"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Columns/spans --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-25"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-25"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-25"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-25"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 <div class="example content" data-hagrid="grid-container">
     <!-- Rows -->
     <div class="collection" data-hagrid="grid-row">
@@ -68,27 +111,48 @@
         <div data-hagrid="span-25">
         	<div class="example-block">
         	
-        	</div>	
+        	</div>
         </div>
         <div data-hagrid="span-25">
         	<div class="example-block">
         	
-        	</div>	
+        	</div>
         </div>
         <div data-hagrid="span-25">
         	<div class="example-block">
         	
-        	</div>	
+        	</div>
         </div>
         <div data-hagrid="span-25">
         	<div class="example-block">
         	
-        	</div>	
+        	</div>
         </div>
     </div>
 </div>
 
 <h3>Columns in thirds</h3>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example content"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-container"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Rows --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collection"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Columns/spans --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-33"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-33"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-33"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
 <div class="example content" data-hagrid="grid-container">
     <!-- Rows -->
     <div class="collection" data-hagrid="grid-row">
@@ -96,22 +160,96 @@
         <div data-hagrid="span-33">
         	<div class="example-block">
         	
-        	</div>	
+        	</div>
         </div>
         <div data-hagrid="span-33">
         	<div class="example-block">
         	
-        	</div>	
+        	</div>
         </div>
         <div data-hagrid="span-33">
         	<div class="example-block">
         	
-        	</div>	
+        	</div>
         </div>
     </div>
 </div>
 
 <h3>Nested grid rows</h3>
+<pre><code><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example content"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-container"</span>&gt;</span>
+    <span class="hljs-comment">&lt;!-- Rows --&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collection"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Columns/spans --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-50"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-33"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-33"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-33"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-50"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collection"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Columns/spans --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-100"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"collection"</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+        <span class="hljs-comment">&lt;!-- Columns/spans --&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-75"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-33"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-66"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-25"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"grid-row"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-50"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">data-hagrid</span>=<span class="hljs-string">"span-50"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"example-block"</span>&gt;</span>
+
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre>
+
+
 <div class="example content" data-hagrid="grid-container">
     <!-- Rows -->
     <div class="collection" data-hagrid="grid-row">
@@ -121,24 +259,24 @@
                 <div data-hagrid="span-33">
                 	<div class="example-block">
                 	
-                	</div>	
+                	</div>
                 </div>
                 <div data-hagrid="span-33">
                 	<div class="example-block">
                 	
-                	</div>	
+                	</div>
                 </div>
                 <div data-hagrid="span-33">
                 	<div class="example-block">
                 	
-                	</div>	
+                	</div>
                 </div>
             </div>
         </div>
         <div data-hagrid="span-50">
         	<div class="example-block">
         	
-        	</div>	
+        	</div>
         </div>
     </div>
 
@@ -147,7 +285,7 @@
         <div data-hagrid="span-100">
         	<div class="example-block">
         	
-        	</div>	
+        	</div>
         </div>
     </div>
 
@@ -158,12 +296,12 @@
                 <div data-hagrid="span-33">
                 	<div class="example-block">
                 	
-                	</div>	
+                	</div>
                 </div>
                 <div data-hagrid="span-66">
                 	<div class="example-block">
                 	
-                	</div>	
+                	</div>
                 </div>
             </div>
         </div>
@@ -172,12 +310,12 @@
                 <div data-hagrid="span-50">
                 	<div class="example-block">
                 	
-                	</div>	
+                	</div>
                 </div>
                 <div data-hagrid="span-50">
                 	<div class="example-block">
                 	
-                	</div>	
+                	</div>
                 </div>
             </div>
         </div>
