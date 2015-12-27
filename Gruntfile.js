@@ -32,7 +32,7 @@ module.exports = function(grunt) {
         data: ['src/site/data/*.{json,yml}', 'src/site/data/examples/*.json'],
         ext: '.html',
         expand: true,
-        assets: './static',
+        assets: 'static',
         marked: {
           highlight: function (code) {
             return require('highlight.js').highlightAuto(code).value;

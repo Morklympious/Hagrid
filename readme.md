@@ -1,5 +1,7 @@
 # Behold! Hagrid!
 
+[Visit the site](http://bradleystafford.com/hagrid/)
+
 Hagrid is an HTML-attribute Grid system used for the layout of your websites. It's a method of styling that uses _attributes_ as opposed to classes, so if you're worried about munging your semantic class names with your layout stylings, worry no more!
 
 Hagrid was built to primarily make a joke. A pun, really.
