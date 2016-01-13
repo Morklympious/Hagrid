@@ -1,0 +1,13 @@
+
+// Generate Span column rules in tens. 
+.generate-columns(@rule, @start, @end) when (@start <= @end) {
+	
+  @current-rule: @start*10;
+
+  *[data-hagrid="@{rule}-@{current-rule}"] {
+    span: @current-rule~"%" ;
+  }
+
+  .generate-columns(@rule, @start + 1, @end);
+}
+

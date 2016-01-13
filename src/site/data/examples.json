@@ -2,6 +2,6 @@
 	"heading": "Examples", 
 	"body": [
 		"Hagrid differs from other libraries only in the way that the styles are accessed, so a lot of what you see with other grid frameworks will translate directly to your usage here.",
-		"Out of the box, Hagrid supports nested rows. So if you need to break a 75% span down into thirds, you shouldn't have a problem."
+		"Hagrid supports nested rows. So if, for example, you need to break a 75% span down into thirds, you shouldn't have a problem."
 	]
 }

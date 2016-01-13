@@ -39,7 +39,7 @@
     <h1>What is Hagrid?</h1>
   </div>
 
-    <p> Hagrid is a "Semantic" grid framework, but it's mostly a pun. It's semantic in the sense that it won't leave all of your precious classes muddled with names that don't make sense to another developer. It's probably most useful if you're a fan of some componentized markup like Bootstrap! </p>
+    <p> Hagrid is a "Semantic" grid framework, but it's mostly a pun. It's semantic in the sense that it won't leave all of your precious classes muddled with names that don't make sense to another developer. It's easy to use if you're a fan of CSS grid frameworks (like Bootstrap, Foundation, etc.! </p>
     <p> Anyways, I set out to build a grid framework I hadn't seen before, one that didn't need classes to survive. I turned to data attributes. </p>
     <p> You're probably thinking <em>"Data attributes? Bradley, you're trash. That's so slow!"</em> </p>
     <p> I won't say that's not a valid concern (or that I'm not, in fact, trash), but I think you should also have a little more faith in our browsers (and probably me), we've come a long way since the days of yore in the web space. </p>
@@ -65,8 +65,12 @@
 
     <div class="footer" data-hagrid="grid-container">
     	<div class="footer-contents" data-hagrid="grid-row">
-    		<div data-hagrid="span-80">
-    		<p> Created by Bradley Stafford </p>
+    		<div data-hagrid="span-50">
+    			<p> Created by Bradley Stafford </p>
+    		</div>
+    		<div data-hagrid="span-50">
+    			<p> Built with Assemble, Grunt </p>
     		</div>
     	</div>
+    
     </div></html>

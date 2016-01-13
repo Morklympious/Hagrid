@@ -25,7 +25,7 @@ __Three steps__:
 2. Define a grid row inside that container: `<div data-hagrid="grid-row"></div>`
 3. Define a span inside the `grid-row` div: `<div data-hagrid="span-10"></div>`
 
-__Pushing and pulling__:
+__Pre/Post__:
 
 You can also push columns (to the right or left) using:
 
@@ -42,6 +42,14 @@ Yes. This is a joke. A mostly ie8-compatible joke.
 ## Can I contribute?
 
 By all means! Fork it! Update the site! Update the library! Give more examples! I DON'T EVEN KNOW. I'll accept Pull Requests if they're not totally trying to ruin my precious jokes. 
+
+## Notes
+
+- the LESS file is in really sad shape. Will it compile? Yes. But it's far from optimized! I plan on working on that in the future.
+- I should probably support SASS, too. 
+- If you have feedback or issues, be sure to log them in the repo!
+
+Happy coding!
 
 
 
