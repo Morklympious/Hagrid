@@ -45,7 +45,7 @@ module.exports = function(grunt) {
           silent: false,
           smartLists: false,
           smartypants: false,
-          tables: true 
+          tables: true
         },
         helpers: ['handlebars-helper-md'],
       },
@@ -54,14 +54,14 @@ module.exports = function(grunt) {
         files: [
           // Index
           {expand: true, cwd: 'src/site/pages/', src: '*.hbs', dest: 'site', ext: '.html'},
-        
+
         ]
       }
 
     }
 
   });
-  
+
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-assemble');
@@ -69,5 +69,3 @@ module.exports = function(grunt) {
   grunt.registerTask('default', ['cssmin', 'less']);
   grunt.registerTask('all', ['cssmin', 'less', 'assemble']);
 };
-
-

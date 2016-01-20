@@ -2,7 +2,7 @@
 	"groups": [
 		{
 			"heading": "What's all this, then?",
-			"body": [	
+			"body": [
 				"Well, let me start off by saying that's a great question.",
 				"Hagrid is this odd little joke that came to mind when I was getting my feet wet reading about CSS and semantics. I thought to myself \"Why is everyone getting so bent out of shape over what their classes are?\" Obviously I had no real grip on this problem, but I wanted to see if there was another way to do layout while leaving classes alone.",
 				"Obviously I found a solution in Hagrid. If you didn't already guess, Hagrid is actually a partial-acronym for 'HTML Attribute Grid', which, if you think about it, is really just lucky on my part. Hagrid HAPPENS to be the name of a character in Harry Potter, and Hagrid ALSO HAPPENS to utter the well-known phrase \"You're a wizard, harry.\" From there the rest is simply a hop, skip, and a pun away from this fledgeling grid framework!",
@@ -13,11 +13,11 @@
 		},
 		{
 			"heading": "Acknowledgements",
-			"body": [	
+			"body": [
 				"Of course, no man is an island. I'd be lying through my teeth if I said I came up with this idea without some inspiration",
 				"Thanks to Nathan Smith's <a href=\"http://unsemantic.com/\">Unsemantic</a> for exemplifying the silliness of semantics",
 				"Thanks to David Lumley's <a href=\"https://github.com/davidlumley/concrete\">Concrete</a> for yet another beautiful css grid library example",
-				"Thanks to every non web developer who put up with me explaining this joke in great detail."
+				"Thanks to every non web developer who put up with me explaining this joke in great detail.",
 				"And of course, thanks to a multitude of speakers on CSS and Semantics"
 			]
 		}

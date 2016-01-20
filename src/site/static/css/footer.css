@@ -1,7 +1,8 @@
 .footer {
 	padding: 0 16px;
+  padding-top: 48px;
 	border-color: #888;
-	background-color: #2a2a2a;
+  text-align: right;
 	font-size: 16px;
 }
 
@@ -9,5 +10,10 @@
   padding: 8px;
   width: 80%;
   margin: 0 auto;
-  color: #eee;
+  color: #a2a2a2;
+  font-style: italic;
+}
+
+.built-by a {
+    color: #e14d43;
 }
